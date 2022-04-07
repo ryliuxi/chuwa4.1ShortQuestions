@@ -1,4 +1,4 @@
-1. What is Interface and what is abstract class? What are the differences between them?
+# What is Interface and what is abstract class? What are the differences between them?
 
 Both abstract class and interface are used for abstraction.
 
@@ -18,14 +18,14 @@ https://www.guru99.com/interface-vs-abstract-class-java.html#:~:text=An%20abstra
 
 
 
-2.  What is the differences between overriding and overloading?
+# What is the differences between overriding and overloading?
 
-## What is Overloading and Overriding?
+### What is Overloading and Overriding?
 When two or more methods in the same class have the same name but different parameters, it’s called Overloading.
 
 When the method signature (name and parameters) are the same in the superclass and the child class, it’s called Overriding.
 
-## Overriding vs Overloading
+### Overriding vs Overloading
 
 Overriding implements Runtime Polymorphism whereas Overloading implements Compile time polymorphism.
 The method Overriding occurs between superclass and subclass. Overloading occurs between the methods in the same class.
@@ -38,7 +38,7 @@ If overriding breaks, it can cause serious issues in our program because the eff
 https://www.journaldev.com/32182/overriding-vs-overloading-in-java#:~:text=What%20is%20Overloading%20and%20Overriding,child%20class%2C%20it's%20called%20Overriding.
 
 
-3.  What is final key word? (Filed, Method, Class)
+#  What is final key word? (Filed, Method, Class)
 
 The final keyword in java is used to restrict the user. The java final keyword can be used in many context. Final can be:
 
@@ -56,7 +56,7 @@ https://www.javatpoint.com/final-keyword#finalm
 https://www.geeksforgeeks.org/final-keyword-in-java/
 
 
-4.  What is Java garbage collection?
+#  What is Java garbage collection?
 
 Garbage collection in Java is the process by which Java programs perform automatic memory management. Java programs compile to bytecode that can be run on a Java Virtual Machine, or JVM for short. When Java programs run on the JVM, objects are created on the heap, which is a portion of memory dedicated to the program. Eventually, some objects will no longer be needed. The garbage collector finds these unused objects and deletes them to free up memory.
 
@@ -65,7 +65,7 @@ https://www.geeksforgeeks.org/garbage-collection-java/
 
 https://stackify.com/what-is-java-garbage-collection/#:~:text=Java%20garbage%20collection%20is%20the,memory%20dedicated%20to%20the%20program.
 
-5.  What is the differences between super and this?
+#  What is the differences between super and this?
 
 The this keyword points to a reference of the current class, while the super keyword points to a reference of the parent class. this can be used to access variables and methods of the current class, and super can be used to access variables and methods of the parent class from the subclass.
 
@@ -76,7 +76,7 @@ https://www.techiedelight.com/difference-between-this-super-keyword-java/#:~:tex
 https://www.geeksforgeeks.org/difference-super-java/
 
 
-6. Can we use this keyword in constructor and why?
+# Can we use this keyword in constructor and why?
 
 Yes. Using this with a Constructor
 
@@ -109,7 +109,7 @@ If present, the invocation of another constructor must be the first line in the 
 https://docs.oracle.com/javase/tutorial/java/javaOO/thiskey.html#:~:text=The%20most%20common%20reason%20for,a%20method%20or%20constructor%20parameter.&text=Each%20argument%20to%20the%20constructor,of%20the%20constructor's%20first%20argument
 
 
-7. What is Runtime/unchecked exception? what is Compile/Checked Exception?
+# What is Runtime/unchecked exception? what is Compile/Checked Exception?
 
 A checked exception is an exception that occurs at the compile time, these are also called as compile time exceptions. These exceptions cannot simply be ignored at the time of compilation, the programmer should take care of (handle) these exceptions.
 
@@ -122,7 +122,7 @@ https://www.tutorialspoint.com/Checked-vs-Unchecked-exceptions-in-Java#:~:text=A
 
 
 
-8. what is the difference between throw and throws?
+# what is the difference between throw and throws?
 
 Both throw and throws are concepts of exception handling in Java. The throws keyword is used to declare which exceptions can be thrown from a method, while the throw keyword is used to explicitly throw an exception within a method or block of code.
 
@@ -135,7 +135,11 @@ https://www.geeksforgeeks.org/difference-between-throw-and-throws-in-java/
 https://www.tutorialspoint.com/difference-between-throw-and-throws-in-java
 https://rollbar.com/blog/how-to-use-the-throws-keyword-in-java-and-when-to-use-throw/#:~:text=The%20throws%20keyword%20is%20used,method%20or%20block%20of%20code.
 
-9. Run the below three pieces codes,Noticed the printed exceptions.  why do we put the Null/Runtime exception before Exception?
+# Run the below three pieces codes,Noticed the printed exceptions.  why do we put the Null/Runtime exception before Exception?
+
+
+When catching exceptions you want to always catch the most specific first and then the most generic (as RuntimeException or Exception). 
+
 
 ```java 
 public class Main {
