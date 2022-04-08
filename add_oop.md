@@ -28,4 +28,12 @@ The caller to these methods has to handle the exception using a try-catch block.
 9. 
 output1: java.lang.ArithmeticException: / by zero
 	at Main.main(Main.java:7)
-output2: 
+output2: java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "<local3>" is null
+	at Main.main(Main.java:8)
+output3: java.lang.RuntimeException
+	at Main.main(Main.java:9)
+/Main.java:9: error: unreachable statement
+            System.out.println(b / a);
+            ^
+1 error
+
