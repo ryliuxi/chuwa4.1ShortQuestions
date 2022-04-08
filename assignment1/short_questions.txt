@@ -64,6 +64,7 @@ public class PassValueOrReference {
 }
 
 9. practice git and github then provide one screenshot to prove you have done it.
+Please check q9_part1.png & q9_part2.png.
 
 10. create a maven project using Intellij like the teacher did in the class, send screenshot to me.
-
+Please check q10_part1.png & q10_part2.png.
